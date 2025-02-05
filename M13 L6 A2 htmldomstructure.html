@@ -1,0 +1,20 @@
+<html>
+
+  <head>
+   <title id="coding">DOM Structure</title>
+  </head>
+
+  <body>
+    <h1>DOM Trees and Nodes</h1>
+    <p id="result"></p>    
+    <p id="result1"></p>
+    <p id="result2"></p>
+   	
+    <script>
+        document.getElementById("result").innerHTML = document.getElementById("coding").innerHTML;
+        document.getElementById("result1").innerHTML = document.getElementById("coding").firstChild.nodeValue;
+        document.getElementById("result2").innerHTML = document.getElementById("coding").childNodes[0].nodeValue;
+    </script>
+  </body>
+
+</html>
